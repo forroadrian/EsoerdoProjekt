@@ -1,0 +1,43 @@
+header {
+    background-color: #d9d9d9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 0 auto 40px auto;
+}
+
+.nav-links {
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+  }
+  .carousel {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
