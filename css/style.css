@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 header {
     background-color: #d9d9d9;
     padding: 20px 0;
@@ -32,4 +34,13 @@ header {
   .carousel-item img {
     height: 400px;
     object-fit: cover;
+  }
+
+  .sectionTitle{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .gyikSection i{
+    font-size: 28px;
   }
