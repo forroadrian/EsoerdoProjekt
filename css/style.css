@@ -1,11 +1,7 @@
 header {
-    background-color: #d9d9d9;
+    background-color: #6EA285;
     padding: 20px 0;
     text-align: center;
-}
-
-.nav-links {
-    gap: 60px;
 }
 
 .nav-links a {
@@ -33,3 +29,12 @@ header {
     height: 400px;
     object-fit: cover;
   }
+
+  .nav-link{
+    color: #fff;
+  }
+
+  .carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
