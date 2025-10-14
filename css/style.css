@@ -48,3 +48,7 @@ header {
   .gyikSection i{
     font-size: 28px;
   }
+
+  .logo {
+    width: 90px;
+  }
