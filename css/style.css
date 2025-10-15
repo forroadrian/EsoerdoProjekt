@@ -7,12 +7,12 @@
 }
 
 header {
-  background-color: #6EA285;
-  padding: 20px 0;
+  padding: 15px 0px 15px 0px;
 }
 
 .nav-link {
   font-size: 18px;
+  color: #fff;
 }
 
 .nav-links a:hover {
@@ -47,16 +47,12 @@ header {
   object-fit: cover;
 }
 
-.nav-link {
-  color: #fff;
-}
-
 .carousel-caption h5,
 .carousel-caption p {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.sectionTitle {
+.gyikSection {
   background-color: #efefef;
 }
 
@@ -106,15 +102,36 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.carousel-caption {
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .carousel-caption h3,
 .carousel-caption p {
   color: #fff;
+}
+
+footer,
+header {
+  background-color: #6EA285;
+  ;
+}
+
+footer {
+  color: #fff;
+}
+
+.nav-item {
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  padding-bottom: 5px;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  border-bottom-color: #000;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #000 !important;
 }
