@@ -1,0 +1,189 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+    background-color: #f5f7f6;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004643 !important;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid #E8F5E9;
+    transition: transform 0.4s ease;
+}
+
+.logo:hover {
+    transform: rotate(8deg) scale(1.05);
+}
+
+.navbar-nav {
+    gap: 100px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #E8F5E9 !important;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #E8F5E9;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+section {
+    transition: background 0.4s ease;
+}
+
+section h4,
+section p {
+    color: #004643;
+}
+
+section.bg-light {
+    background-color: #f0f6f5 !important;
+}
+
+h1,
+h2,
+h4 {
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1 {
+    color: #004643;
+    font-size: 2.3rem;
+}
+
+h2 {
+    color: #006e63;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: #004643;
+    font-weight: 600;
+}
+
+.map {
+    width: 80%;
+    max-width: 700px;
+    height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid #004643;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #d9f5e3;
+}
+
+.map:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.leaflet-marker-icon:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: #f1fff7;
+    border: 2px solid #004643;
+    border-radius: 12px;
+}
+
+.leaflet-popup-tip {
+    background-color: #f1fff7;
+}
+
+.leaflet-container a {
+    color: #004643;
+}
+
+#custom-popup {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: #f1fff7;
+    border: 2px solid #004643;
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 250px;
+    pointer-events: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#custom-popup button#popup-close {
+    float: right;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #004643;
+    color: #fff;
+    font-size: 0.95rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #91f0b2 !important;
+}
+
+footer a:hover {
+    color: #c6ffd7 !important;
+}
+
+@media (max-width: 992px) {
+    .map {
+        width: 100% !important;
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}

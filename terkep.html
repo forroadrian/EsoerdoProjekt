@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Térképek – Esőerdők</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="css/terkep.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="text-center">
+            <a href="index.html"><img class="logo" src="img/lightlogo.png" alt="Logó"></a>
+        </div>
+        <div class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler m-auto mb-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="allatok.html">Állatok</a></li>
+                        <li class="nav-item"><a class="nav-link" href="novenyek.html">Növények</a></li>
+                        <li class="nav-item"><a class="nav-link" href="terkep.html">Esőerdők</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="kviz.html">Kvíz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="text-center py-5 bg-light">
+        <h1 class="fw-bold">Szeretnéd felfedezni az esőerdőket?</h1>
+    </section>
+
+    <section class="text-center py-3">
+        <h2 class="fw-bold text-uppercase">Esőerdeink</h2>
+    </section>
+
+    <section class="container-fluid py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-12 mb-3 d-flex justify-content-center">
+                <div id="map1" class="map rounded shadow"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 text-center">
+                <h4>Amazonas esőerdő</h4>
+                <p>A világ legnagyobb esőerdeje, Dél-Amerika szívében. Több ezer növény- és állatfajnak ad otthont.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-light">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-12 text-center order-lg-1 order-2 mb-3">
+                <h4>Kongó-medence</h4>
+                <p>Az afrikai kontinens legnagyobb esőerdője, amely létfontosságú szerepet játszik a Föld éghajlatának
+                    szabályozásában.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-center order-lg-2 order-1 mb-3">
+                <div id="map2" class="map rounded shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-center mb-3">
+                <div id="map3" class="map rounded shadow"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 text-center">
+                <h4>Délkelet-Ázsia esőerdei</h4>
+                <p>Malajzia, Indonézia és Thaiföld esőerdei rendkívül gazdag biodiverzitással rendelkeznek.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="custom-popup" class="animate__animated"
+        style="display:none; position:absolute; z-index:1000; background:#f1fff7; border:2px solid #004643; border-radius:12px; padding:15px; max-width:250px;">
+        <button id="popup-close"
+            style="float:right; border:none; background:transparent; font-weight:bold; cursor:pointer;">✖</button>
+        <div id="popup-content"></div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <div class="col-md-4 d-flex align-items-center p-3">
+            <span>© 2025 BánkiForest - Minden jog fenntartva!</span>
+        </div>
+        <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <a class="px-3 text-decoration-none text-success fw-bold" href="#">Kapcsolat</a>
+            <a class="px-3 text-decoration-none text-success fw-bold" href="#">Források</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
