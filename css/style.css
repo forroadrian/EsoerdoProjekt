@@ -53,6 +53,7 @@ header {
   height: 3px;
   background-color: #E8F5E9;
   transition: width 0.3s ease;
+  
 }
 
 .nav-item:hover::after {
