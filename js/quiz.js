@@ -90,5 +90,3 @@ answerButtons.forEach(btn => {
   });
 });
 });
-
-
