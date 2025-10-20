@@ -1,5 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 body {
     font-family: "Montserrat", sans-serif !important;
@@ -53,45 +52,82 @@ header {
     width: 0%;
     height: 3px;
     background-color: #E8F5E9;
-    transition: width 0.3s ease;
+    transition: width 0.35s ease;
 }
 
 .nav-item:hover::after {
     width: 100%;
 }
 
-section {
-    transition: background 0.4s ease;
-}
-
-section h4,
-section p {
+.hero-section {
+    background-color: rgba(155, 194, 162, 0.18);
     color: #004643;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 0 30px 40px rgba(0, 70, 67, 0.18);
+    margin-bottom: 70px;
+    padding: 70px 0;
 }
 
-section.bg-light {
-    background-color: #f0f6f5 !important;
+.terkepSection {
+    border-bottom: 5px dotted #6ea285;
+    margin-bottom: 50px;
 }
 
-h1,
-h2,
-h4 {
-    font-family: "Fira Sans", sans-serif;
+.section-amazon {
+    background: linear-gradient(180deg, #f4faf7 0%, #e3f2ec 100%);
 }
 
-h1 {
-    color: #004643;
-    font-size: 2.3rem;
+.section-kongo {
+    background: linear-gradient(180deg, #e3f2ec 0%, #e9f1f8 100%);
 }
 
-h2 {
-    color: #006e63;
-    letter-spacing: 1px;
+.section-azsia {
+    background: linear-gradient(180deg, #e9f1f8 0%, #f5f3f9 100%);
 }
 
-h4 {
-    color: #004643;
-    font-weight: 600;
+.info-box {
+    position: relative;
+    padding: 25px 40px;
+    text-align: left;
+    background: linear-gradient(to right, rgba(110, 162, 133, 0.06) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 8px;
+    max-width: 540px;
+    margin: 0 auto;
+    transition: background 0.35s ease, transform 0.25s ease;
+}
+
+.info-box.left-border {
+    border-left: 5px solid #6ea285;
+}
+
+.info-box.right-border {
+    border-right: 5px solid #6ea285;
+}
+
+.info-box h4 {
+    position: relative;
+    display: inline-block;
+}
+
+.info-box h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #6ea285;
+    transition: width 0.5s ease;
+}
+
+.info-box:hover h4::after {
+    width: 100%;
+}
+
+.info-box:hover {
+    background: linear-gradient(to right, rgba(110, 162, 133, 0.12) 0%, rgba(255, 255, 255, 0.02) 90%);
+    transform: translateY(-3px);
 }
 
 .map {
@@ -99,36 +135,15 @@ h4 {
     max-width: 700px;
     height: 320px;
     border-radius: 16px;
-    overflow: hidden;
     border: 3px solid #004643;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #d9f5e3;
 }
 
 .map:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.leaflet-marker-icon:hover {
-    transform: scale(1.2);
-    z-index: 1000;
-    transition: transform 0.2s ease;
-}
-
-.leaflet-popup-content-wrapper {
-    background-color: #f1fff7;
-    border: 2px solid #004643;
-    border-radius: 12px;
-}
-
-.leaflet-popup-tip {
-    background-color: #f1fff7;
-}
-
-.leaflet-container a {
-    color: #004643;
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
 
 #custom-popup {
@@ -140,11 +155,10 @@ h4 {
     border-radius: 12px;
     padding: 15px;
     max-width: 250px;
-    pointer-events: auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-#custom-popup button#popup-close {
+#popup-close {
     float: right;
     border: none;
     background: transparent;
@@ -156,7 +170,7 @@ footer {
     background-color: #004643;
     color: #fff;
     font-size: 0.95rem;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
 }
 
 footer a {
@@ -168,22 +182,39 @@ footer a:hover {
 }
 
 @media (max-width: 992px) {
+    .navbar-nav {
+        gap: 20px !important;
+    }
+
     .map {
-        width: 100% !important;
+        width: 95% !important;
         height: 260px;
+    }
+
+    .info-box {
+        padding: 18px 20px;
+        text-align: center;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 5px solid #6ea285 !important;
     }
 }
 
 @media (max-width: 768px) {
-    .navbar-nav {
-        gap: 20px;
+    .hero-section {
+        padding: 40px 0;
     }
 
-    h1 {
-        font-size: 1.8rem;
+    .hero-section h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+
+    .map {
+        width: 95% !important;
     }
 }

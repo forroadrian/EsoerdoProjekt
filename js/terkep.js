@@ -2,7 +2,7 @@ const mapsData = [
     { id: "map1", coords: [-3.4653, -62.2159], title: "Amazonas esőerdő", info: "A világ legnagyobb trópusi esőerdeje Dél-Amerikában." },
     { id: "map2", coords: [-1.4419, 15.5560], title: "Kongó-medence", info: "Afrika legnagyobb esőerdeje, a Föld tüdeje." },
     { id: "map3", coords: [2.5, 112.5], title: "Délkelet-Ázsia esőerdei", info: "Malajzia és Indonézia őserdei elképesztő élővilággal." }
-];
+]
 
 const popupContent = document.getElementById("popup-content");
 const popupClose = document.getElementById("popup-close");
