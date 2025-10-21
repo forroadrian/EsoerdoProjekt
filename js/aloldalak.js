@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       valid = false;
     } else if (feliratkozottEmailek.includes(emailValue.toLowerCase())) {
       emailInput.classList.add("is-invalid");
-      emailError.textContent = "Ezzel az e-mail címmel már regisztráltál!";
+      emailError.textContent = "Ezzel az e-mail címmel már valaki feliratkozott!";
       valid = false;
     } else {
       emailInput.classList.remove("is-invalid");
@@ -55,6 +55,38 @@ document.addEventListener("DOMContentLoaded", () => {
           alertBox.style.display = "none";
         }, 600);
       }, 5000);
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.stat-number');
+  const speed = 150;
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const updateCount = () => {
+        const count = +counter.innerText.replace(/\D/g, '');
+        const increment = target / speed;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target.toLocaleString('hu-HU') + (target < 100 ? '%' : '+');
+        }
+      };
+      updateCount();
+    });
+  };
+
+  const section = document.querySelector('.stats-section');
+  let started = false;
+  window.addEventListener('scroll', () => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < window.innerHeight && !started) {
+      started = true;
+      animateCounters();
     }
   });
 });
