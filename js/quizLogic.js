@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const questionNumber = quizScreen.querySelector(".tasknumber");
     const timerDisplay = quizScreen.querySelector(".timer");
 
-    const correctCountDisplay = quizScreen.querySelectorAll("small strong")[0];
-    const wrongCountDisplay = quizScreen.querySelectorAll("small strong")[1];
+    const correctCountDisplay = quizScreen.querySelectorAll("span strong")[0];
+    const wrongCountDisplay = quizScreen.querySelectorAll("span strong")[1];
     const difficultySelect = startScreen.querySelector("select");
   
     let questions = [];
