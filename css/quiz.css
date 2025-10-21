@@ -46,10 +46,8 @@
   border-radius: 50%;
 
 }
-
-.answers{
-  flex-direction: column;
-  width: 100%;
+.quiz{
+  margin: 50px 0px;
 }
 
 #quiz-screen section, .answers strong, .buttonmenu{
@@ -62,6 +60,10 @@
 }
 
 
+#quiz-screen,  .screen-wrapper, .quiz{
+  padding: 0px!important;
+}
+
 .answers button.selected {
   background-color: #00464379 !important;
   color: #fff !important;
@@ -72,4 +74,10 @@
   background-color: rgba(129, 8, 8, 0.486)  !important;
   color: #fff !important;
   border-color: rgb(129, 8, 8) !important;
+}
+
+.tasknumber{
+  width: 40px; 
+  height: 40px; 
+  line-height: 40px;
 }

@@ -51,9 +51,9 @@
     </div>
   </header>
 
-  <main class="container-fluid my-5 quiz">
+  <main class="container-fluid quiz">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 align-items-center justify-content-center position-relative screen-wrapper">
+      <div class="col-12 col-lg-12 col-sm-12 align-items-center justify-content-center position-relative screen-wrapper">
         <h2 class="mb-5">Esőerdő Kvíz</h2>
         <section id="start-screen" class="screen text-center py-5">
           <div class="m-4">
@@ -74,16 +74,15 @@
         </section>
 
         <section id="quiz-screen" class="screen p-5 text-center">
-          <section class="container-fluid py-2">
-            <div class="row align-items-center text-center text-md-start px-3 container-fluid py-2">
+          <section class="container-fluid py-2 text-center">
+            <div class="row text-md-start m-0 px-3 py-2 align-items-center ">
               <div class="col-12 col-md-4 mb-2 mb-md-0 d-flex justify-content-center justify-content-md-start">
-                <small><strong>1</strong> jó</small>
-                <small class="ms-3"><strong>0</strong> hibás</small>
+                <small><strong>1</strong> <i class="bi bi-check-circle"></i></small>
+                <small class="ms-3"><strong>0</strong> <i class="bi bi-x-circle"></i> </small>
               </div>
 
               <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
-                <div class="rounded-circle bg-light text-dark fw-bold d-inline-block text-center"
-                  style="width: 40px; height: 40px; line-height: 40px;">2</div>
+                <div class="tasknumber rounded-circle bg-light text-dark fw-bold d-inline-block text-center">2</div>
                 <div class="fw-bold">KÉRDÉS</div>
               </div>
               <div class="col-12 col-md-4 text-center text-md-end fw-bold timer">00:20 </div>
@@ -92,25 +91,25 @@
 
           <article class="my-4">
             <h5 class="mb-3 p-3">Melyik állat él az esőerdőben?</h5>
-            <div class="row g-3 answers justify-content-center">
-              <div class="col-11 mx-auto">
-                <button class="btn w-100 text-break d-flex flex-column flex-sm-row align-items-start text-start">
-                  <strong class="me-sm-2 mb-1 mb-sm-0 text-center">A</strong>
-                  <span>dsdsdsdsdsdsdsddsdsdsdsd</span>
+            <div class="row answers justify-content-center">
+              <div class="col-11 mx-auto mb-3">
+                <button class="btn w-100 text-break d-flex flex-column flex-sm-row align-items-center text-start">
+                  <strong class="col-sm-0 mx-auto">A</strong>
+                  <span class="col-sm-12 mx-auto">asasasasasasa</span>
                 </button>
               </div>
 
-              <div class="col-11 mx-auto">
-                <button class="btn w-100 text-break d-flex flex-column flex-sm-row align-items-start text-start">
-                  <strong class="me-sm-2 mb-1 mb-sm-0 text-center">B</strong>
-                  <span>Jegesmedve</span>
+              <div class="col-11 mx-auto mb-3">
+                <button class="btn w-100 text-break d-flex flex-column flex-sm-row align-items-center text-start ">
+                  <strong class="col-sm-0 mx-auto">B</strong>
+                  <span class="col-sm-12 mx-auto">Jegesmedve</span>
                 </button>
               </div>
 
-              <div class="col-11 mx-auto">
-                <button class="btn w-100 text-break d-flex flex-column flex-sm-row align-items-start text-start">
-                  <strong class="me-sm-2 mb-1 mb-sm-0 text-center">C</strong>
-                  <span>Fókaaaaaaaaaaaaaaaaa</span>
+              <div class="col-11 mx-auto mb-3">
+                <button class="btn w-100 text-break d-flex flex-column flex-sm-row align-items-center text-start">
+                  <strong class="col-sm-0 mx-auto">C</strong>
+                  <span class="col-sm-12 mx-auto">Fóka</span>
                 </button>
               </div>
             </div>
