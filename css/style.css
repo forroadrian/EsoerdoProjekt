@@ -9,7 +9,7 @@
 
 body,
 .accordion button {
-  font-family: "Montserrat", sans-serif!important;
+  font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -17,7 +17,8 @@ body,
 }
 
 .gyikSection,
-header, footer {
+header,
+footer {
   background-color: #004643 !important;
 }
 
@@ -32,12 +33,14 @@ header {
 }
 
 .nav-link,
-.gyikSection h2, footer a {
+.gyikSection h2,
+footer a {
   color: #fff !important;
 }
 
-.nav-link, .ad button{
-  font-size: 20px!important;
+.nav-link,
+.ad button {
+  font-size: 20px !important;
 }
 
 .nav-link:hover {
@@ -116,23 +119,25 @@ header {
   border-radius: 100%;
 }
 
-.info-box li{
+.info-box li {
   list-style-image: url(../img/leaf.svg);
   padding-right: 30px;
 }
 
-.info-box i, .ad i{
+.info-box i,
+.ad i {
   font-size: 50px;
   display: flex;
   justify-content: center;
   margin: 20px 0px;
 }
 
-.info-section h2, .tipSection h2 {
+.info-section h2,
+.tipSection h2 {
   font-size: 1.8rem;
   padding-bottom: 0.5rem;
   margin: auto 40px;
-  border-bottom: 5px dotted #6EA285!important;
+  border-bottom: 5px dotted #6EA285 !important;
 }
 
 .info-box {
@@ -141,12 +146,14 @@ header {
   border-top: 20px solid #006457;
 }
 
-.card, .info-box{
+.card,
+.info-box {
   border-radius: 20px;
 }
 
 .info-box:hover,
-.btn:hover, .card-icon:hover{
+.btn:hover,
+.card-icon:hover {
   transform: scale(1.1) !important;
   transition: transform 0.3s ease !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
@@ -188,24 +195,31 @@ footer {
   padding: 10px 15px;
 }
 
-.card-icon, .accordion-body{
+.card-icon,
+.accordion-body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 
-.bi-question, .card-icon, .info-box i, footer i{
+.bi-question,
+.card-icon,
+.info-box i,
+footer i {
   border-radius: 50%;
 }
 
-.bi-question, footer i .ad i{
+.bi-question,
+footer i .ad i {
   background-color: #002D2B;
   color: #ffffff;
   padding: 0px 6px;
   margin-right: 20px;
 }
 
-footer, .bi-question, footer i{
-  font-size: 18px!important;
+footer,
+.bi-question,
+footer i {
+  font-size: 18px !important;
 }
 
 .gyikSection h2 {
@@ -221,13 +235,14 @@ footer, .bi-question, footer i{
   margin-top: 30px;
 }
 
-.card{
+.card {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 
 }
 
-h3, h2 {
+h3,
+h2 {
   text-transform: uppercase;
 }
 
@@ -237,12 +252,19 @@ section h3 {
 }
 
 
-h2, h4, nav, footer .btn {
+h2,
+h4,
+nav,
+footer .btn {
   color: #0B2B19 !important;
-  border: none!important;
+  border: none !important;
 }
 
-h5, h2, h4, nav, footer .btn{
+h5,
+h2,
+h4,
+nav,
+footer .btn {
   font-weight: 700;
 }
 
@@ -263,7 +285,8 @@ h5, h2, h4, nav, footer .btn{
   box-shadow: inset 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card, .accordion-button:not(.collapsed){
+.card,
+.accordion-button:not(.collapsed) {
   color: #004643 !important;
 }
 
@@ -271,9 +294,9 @@ h5, h2, h4, nav, footer .btn{
   transform: translateY(-3px);
 }
 
-.accordion-item button{
-  font-size: 18px!important;
-  color:#002D2B!important;
+.accordion-item button {
+  font-size: 18px !important;
+  color: #002D2B !important;
 }
 
 .roundimg {
@@ -291,18 +314,18 @@ h5, h2, h4, nav, footer .btn{
   transition: transform 0.6s ease !important;
 }
 
-.roundimg{
+.roundimg {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer a{
+footer a {
   text-decoration: none;
 }
 
-footer i{
- padding: 10px;
+footer i {
+  padding: 10px;
 }
 
-.footer-top{
+.footer-top {
   background-image: url(../img/footerbg.png);
 }
