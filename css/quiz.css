@@ -1,0 +1,142 @@
+.screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  width: 100%;
+}
+
+.screen {
+  width: 90%;
+  transition: opacity 0.3s ease;
+}
+
+.answers button {
+  padding: 20px 45px;
+  text-align: left !important;
+}
+
+.answers button,
+#start-screen,
+#quiz-screen {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.answers strong {
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.quiz {
+  margin: 50px 0px;
+}
+
+#quiz-screen section,
+.answers strong,
+.buttonmenu {
+  background-color: #004643;
+  color: #fff;
+}
+
+#quiz-screen h5 {
+  border-bottom: 1px solid #cecece;
+}
+
+.quiz .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#quiz-screen,
+.screen-wrapper,
+.quiz {
+  padding: 0px !important;
+}
+
+.answers button.selected {
+  background-color: #00464379 !important;
+  color: #fff !important;
+  border-color: #004643 !important;
+}
+
+.answers button.wrong {
+  background-color: rgba(129, 8, 8, 0.486) !important;
+  color: #fff !important;
+  border-color: rgb(129, 8, 8) !important;
+}
+
+.tasknumber {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#result-screen {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease forwards;
+}
+
+.result-box h3 {
+  color: #004643;
+  font-weight: bold;
+}
+
+.result-box p {
+  margin: 10px 0;
+}
+
+.result-box button {
+  background-color: #004643;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.result-box button:hover {
+  background-color: #006a63;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz .row {
+    margin: 0 auto !important;
+    width: 100%;
+  }
+
+  .screen {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .container-fluid.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
