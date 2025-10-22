@@ -32,7 +32,7 @@
   margin: 50px 0px;
 }
 
-#quiz-screen section,
+.quiz-header ,
 .answers strong,
 .buttonmenu {
   background-color: #004643;
